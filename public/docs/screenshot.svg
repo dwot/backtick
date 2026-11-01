@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="180" viewBox="0 0 480 180" font-family="system-ui, sans-serif">
+  <rect width="480" height="180" rx="12" fill="#fbfbf8" stroke="#e3e3dc"/>
+  <text x="20" y="34" font-family="Georgia, serif" font-size="20" font-weight="bold" fill="#1a1a1b">Backtick</text>
+  <rect x="20" y="52" width="210" height="108" rx="8" fill="#fff" stroke="#e3e3dc"/>
+  <rect x="34" y="68" width="120" height="12" rx="3" fill="#1a1a1b"/>
+  <rect x="34" y="90" width="170" height="8" rx="3" fill="#c8c8c2"/>
+  <rect x="34" y="104" width="140" height="8" rx="3" fill="#c8c8c2"/>
+  <g transform="translate(34 126)"><rect width="20" height="20" rx="4" fill="#6aaa64"/><rect x="26" width="20" height="20" rx="4" fill="#6aaa64"/><rect x="52" width="20" height="20" rx="4" fill="#c9b458"/></g>
+  <rect x="250" y="52" width="210" height="108" rx="8" fill="#fff" stroke="#e3e3dc"/>
+  <text x="264" y="78" font-family="ui-monospace, Menlo, monospace" font-size="12" fill="#6e6e73"># Heading</text>
+  <text x="264" y="98" font-family="ui-monospace, Menlo, monospace" font-size="12" fill="#6e6e73">Some **bold** text</text>
+  <text x="264" y="118" font-family="ui-monospace, Menlo, monospace" font-size="12" fill="#6e6e73">- [x] done</text>
+</svg>

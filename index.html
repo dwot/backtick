@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backtick</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%236aaa64'/><text x='16' y='26' font-size='26' text-anchor='middle' fill='white' font-family='monospace'>`</text></svg>" />
+  </head>
+  <body>
+    <header class="top">
+      <div class="brand">
+        <a href="#/" class="home"><h1>Backtick</h1></a>
+        <span id="meta" class="meta"></span>
+      </div>
+      <nav>
+        <a href="#/sheet" id="nav-sheet" class="nav-link">Cheat sheet</a>
+        <span id="star-total" class="star-total" title="Stars earned"></span>
+        <button id="btn-help" class="ghost" aria-label="How to play">?</button>
+      </nav>
+    </header>
+
+    <main id="map-view" class="map"></main>
+
+    <main id="sheet-view" class="sheet hidden"></main>
+
+    <main id="level-view" class="board hidden">
+      <details class="panel area-card" id="card-panel" open>
+        <summary class="panel-title">How it works</summary>
+        <article id="card" class="markdown-body"></article>
+      </details>
+      <div class="panel area-target">
+        <div class="panel-title"><span id="target-title">Recreate this</span></div>
+        <article id="target" class="markdown-body"></article>
+        <ul id="clues" class="clues"></ul>
+      </div>
+      <div class="panel area-editor">
+        <div class="panel-title">Your markdown <span class="muted">Ctrl/⌘ + Enter to check</span></div>
+        <div id="editor"></div>
+        <div class="controls">
+          <button id="check" class="primary">Check</button>
+          <button id="peek" class="ghost"></button>
+        </div>
+      </div>
+      <div class="panel area-checks">
+        <div class="panel-title">Checks <span id="worth" class="worth"></span></div>
+        <div id="rows" class="rows"></div>
+        <ul id="reasons" class="reasons"></ul>
+      </div>
+      <div class="panel area-preview hidden" id="preview-panel">
+        <div class="panel-title">Preview</div>
+        <article id="preview" class="markdown-body"></article>
+      </div>
+    </main>
+
+    <dialog id="modal">
+      <button class="close" aria-label="Close">×</button>
+      <div id="modal-body" tabindex="-1"></div>
+    </dialog>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

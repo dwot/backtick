@@ -1,0 +1,10 @@
+# Local run of the production image: docker compose -f deploy/compose.yaml up --build
+# then open http://localhost:8080.
+services:
+  backtick:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    image: backtick:local
+    ports:
+      - "8080:80"
