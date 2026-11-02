@@ -166,7 +166,7 @@ function showMap() {
       </section>`;
   });
 
-  $('map-view').innerHTML = hero + sections.join('') + '<p class="legal"><a href="https://plaintext.guru">plaintext.guru</a> · <a href="https://github.com/dwot/backtick">Source on GitHub</a> · <a href="third-party.txt">Licences</a></p>';
+  $('map-view').innerHTML = hero + sections.join('') + '<p class="legal"><a href="https://plaintext.guru">plaintext.guru</a> · <a href="https://github.com/dwot/backtick">Source on GitHub</a> · <a href="third-party.txt">Licences</a> · Visits are counted with Cloudflare Web Analytics</p>';
   window.scrollTo(0, 0);
 }
 
