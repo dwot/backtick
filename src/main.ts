@@ -1,4 +1,5 @@
 import 'github-markdown-css/github-markdown.css';
+import './tokens.css';
 import './style.css';
 import {
   EditorView, drawSelection, dropCursor, highlightSpecialChars, keymap, lineNumbers,
@@ -39,7 +40,7 @@ function showView(v: View) {
 }
 
 const starText = (n: number, of = 3) =>
-  `<span class="stars" aria-label="${n} of ${of} stars">${'★'.repeat(n)}<span class="off">${'★'.repeat(of - n)}</span></span>`;
+  `<span class="stars" aria-label="${n} of ${of} stars">${'★'.repeat(n)}${'☆'.repeat(of - n)}</span>`;
 
 const escapeHtml = (s: string) =>
   s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
@@ -166,7 +167,7 @@ function showMap() {
       </section>`;
   });
 
-  $('map-view').innerHTML = hero + sections.join('') + '<p class="legal"><a href="https://plaintext.guru">plaintext.guru</a> · <a href="https://github.com/dwot/backtick">Source on GitHub</a> · <a href="third-party.txt">Licences</a> · Visits are counted with Cloudflare Web Analytics</p>';
+  $('map-view').innerHTML = hero + sections.join('') + `<p class="legal">Also from plaintext.guru: <a href="https://tilde.plaintext.guru">Tilde</a>, the shell</p><p class="legal"><a href="https://github.com/dwot/backtick">Source on GitHub</a> · <a href="third-party.txt">Licences</a> · Visits are counted with Cloudflare Web Analytics</p>`;
   window.scrollTo(0, 0);
 }
 
